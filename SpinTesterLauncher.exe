@@ -1,0 +1,26 @@
+@echo off
+echo SpinTester 설치를 시작합니다.
+timeout /t 2 /nobreak > NUL
+cls
+echo VCRedist 다운로드를 시작합니다.
+powershell "(new-Object System.Net.WebClient).DownloadFile('https://aka.ms/vs/16/release/vc_redist.x64.exe', 'vc_redist.x64.exe')"
+echo 다운로드가 완료되었습니다.
+timeout /t 2 /nobreak > NUL
+echo SpinTester 다운로드를 시작합니다.
+powershell "(new-Object System.Net.WebClient).DownloadFile('https://cdn.discordapp.com/attachments/734407001198690315/773091455602393099/KrunkerSpin.exe', 'KrunkerSpin.exe')"
+echo SpinTester 다운로드가 완료되었습니다.
+timeout /t 2 /nobreak > NUL
+cls
+echo 반드시 VCRedist (vc_redist.x64.exe)를 먼저 설치하여 주십시오. 
+echo 설치되어 있는 경우 설치 수정 이 출력됩니다.
+pause
+cls
+echo SpinTester는 HakJu12(이또치#1234)가 개발한 Krunker.io 스핀 시뮬레이션 프로그램입니다.
+echo 당신의 운을 시험해보세요!
+pause
+cls
+echo Heroic 스핀에서 Contraband 이상의 스킨이 나올 경우 스핀이 멈춥니다. 
+echo 따라서 스페이스 바를 꾹 누르고 있어도 무방합니다.
+timeout /t 2 /nobreak > NUL
+echo 아무 키나 누르면 프로그램이 종료됩니다.
+pause
